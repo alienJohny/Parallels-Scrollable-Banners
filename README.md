@@ -1,7 +1,7 @@
 # Parallels Scrollable Banners Task
 
 # Первый запуск
-1. Клонировать репозиторий и настроить права доступа к скриптам запуска: <br />
+Клонировать репозиторий и настроить права доступа к скриптам запуска: <br />
 `$ git clone https://github.com/alienJohny/Parallels-Scrollable-Banners.git`
 <br />
 `$ cd Parallels-Scrollable-Banners/psb/`
