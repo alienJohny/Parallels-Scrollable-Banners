@@ -1,5 +1,7 @@
 # Parallels Scrollable Banners Task
 
+Фреймворк: `Django version 2.1.3`
+<br />
 # Первый запуск
 Клонировать репозиторий и настроить права доступа к скриптам запуска: <br />
 `$ git clone https://github.com/alienJohny/Parallels-Scrollable-Banners.git`

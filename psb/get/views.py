@@ -5,6 +5,9 @@ from get.models import Banner
 
 def get(request):
     if request.method == "GET":
-        if "category[]" in request.GET:
+        if "category" in request.GET:
             print(request.GET)
+
     return HttpResponse("get page")
+
+
