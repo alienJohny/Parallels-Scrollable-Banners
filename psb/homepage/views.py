@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .support_functions import handle_uploaded_file
+from DataManager.DataManager import DataManager
 
 
 def homepage(request):
@@ -9,6 +10,6 @@ def homepage(request):
 
 def upload(request):
     if request.method == "POST":
-        handle_uploaded_file(request.FILES['file'], request.FILES['file'].name)
+        path = handle_uploaded_file(request.FILES['file'], request.FILES['file'].name)
     return redirect(homepage)
 
