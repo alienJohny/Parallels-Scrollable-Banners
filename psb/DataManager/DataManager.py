@@ -1,3 +1,6 @@
+import pandas as pd
+import requests
+
 class DataManager():
 
     def __init__(self):
@@ -18,3 +21,15 @@ class DataManager():
     def from_csv(self, s):
         return s.split(",")
 
+    def download_photo(self, url, destination):
+        img_name = url.split("/")[-1]
+        with open(destination + img_name, 'wb') as f:
+            f.write(requests.get(url).content)
+
+    def save_photos(self, cfg_path, img_path):
+        ds = pd.read_csv(cfg_path, sep=";")
+        url_col = ds.columns[0]
+        urls = ds[url_col]
+
+        for url in urls:
+            self.download_photo(url, img_path)
