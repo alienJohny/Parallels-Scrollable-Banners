@@ -12,3 +12,9 @@ class DataManager():
     def matching_values(self, a, b):
         return sum([1 if i in b else 0 for i in a])
 
+    def to_csv(self, l):
+        return ",".join(l)
+
+    def from_csv(self, s):
+        return s.split(",")
+
