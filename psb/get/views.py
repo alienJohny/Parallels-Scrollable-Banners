@@ -5,7 +5,6 @@ from get.models import Banner
 
 def get(request):
     if request.method == "GET":
-
         # To manage the issuance of banners
         dm = DataManager()
 
@@ -26,16 +25,18 @@ def get(request):
             # Banner to be shown
             banner_pk = dm.random_pick_from_given_distribution(good_pks, sorted_psa)
 
+            # If used
+            banner_pk = dm.was_used(banner_pk, good_pks)
+
             # Decrement amount of shows
             banner_to_show = Banner.objects.get(pk=banner_pk)
-            banner_to_show.prepaid_shows_amount -= 1
-            banner_to_show.save()
         else:
             # Pick random banner
             banners = Banner.objects.filter(prepaid_shows_amount__gt=0)
             banner_to_show = dm.random_pick_from_given_distribution(banners, None)
-            banner_to_show.prepaid_shows_amount -= 1
-            banner_to_show.save()
+
+        banner_to_show.prepaid_shows_amount -= 1
+        banner_to_show.save()
 
     return render(request, 'get/get.html', {"banner_url": banner_to_show.url})
 
