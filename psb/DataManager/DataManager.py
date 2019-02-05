@@ -17,6 +17,7 @@ class DataManager():
         :param distr: Array, probability distribution
         :return: QueryDict object
         """
+
         _p = self._get_probabilities(distr) if distr != None else None
         return numpy.random.choice(objects, p=_p)
 
@@ -28,6 +29,7 @@ class DataManager():
         :param b: Array
         :return: Int
         """
+
         return sum([1 if i in b else 0 for i in a])
 
     def save_data(self, cfg_path):
@@ -37,6 +39,7 @@ class DataManager():
         :param cfg_path: Config path
         :return: None
         """
+
         try:
             ds = pd.read_csv(cfg_path, sep=";")
 
