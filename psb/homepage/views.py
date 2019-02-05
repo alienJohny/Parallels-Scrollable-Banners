@@ -15,7 +15,7 @@ def upload(request):
         cfg_path = handle_uploaded_file(request.FILES['file'],
                                         request.FILES['file'].name)
         dm = DataManager()
-        dm.save_photos(cfg_path, BASE_DIR + "/uploads/banners/")
+        dm.save_data(cfg_path)
 
     return redirect(homepage)
 

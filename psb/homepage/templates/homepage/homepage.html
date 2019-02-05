@@ -17,7 +17,8 @@
 
   <div class="container" style="height: 400px;">
     <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
-      <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data" class="p-3 shadow-sm rounded" style="width: 500px; background-color: #FAFAFA;">
+      <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data" class="p-3 shadow-sm rounded"
+            style="width: 500px; background-color: #FAFAFA;">
         {% csrf_token %}
         <!-- Tip -->
         <div class="form-group">
@@ -29,18 +30,33 @@
         <div class="form-group">
           <div class="custom-file">
             <input required name="file" type="file" class="custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile">Choose config file</label>
+            <label class="custom-file-label" for="customFile" >Choose config file</label>
           </div>
         </div>
         <!-- Submit -->
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success" id="submit_button" disabled title="Upload data">Submit</button>
       </form>
-      <script>
+    </div>
+  </div>
+
+  <script>
               $(document).ready(function () {
                 bsCustomFileInput.init()
               })
       </script>
-    </div>
-  </div>
+  <script>
+        document.getElementById('customFile').addEventListener('input', function (evt) {
+          if (document.getElementById('customFile').value != "") {
+            console.log("changed");
+            $("#submit_button").removeAttr("disabled");
+            $("#submit_button").removeAttr("title");
+          }
+        });
+
+        $("#submit_button").click(function() {
+          var loading_gif_url = "https://i.pinimg.com/originals/fe/24/ae/fe24ae50007b9d45aefeb5594c020efb.gif";
+          $("#submit_button").html('<img style="height: 20xp; width: 20px;" src=' + loading_gif_url + '></img> &nbsp; Please wait...');
+        });
+      </script>
 </body>
 </html>
