@@ -22,16 +22,19 @@ class DataManager():
         return sum([1 if i in b else 0 for i in a])
 
     def save_data(self, cfg_path):
-        ds = pd.read_csv(cfg_path, sep=";")
+        try:
+            ds = pd.read_csv(cfg_path, sep=";")
 
-        for index, row in ds.iterrows():
-            url = row[0]
-            psa = row[1]
-            cat_list = [row[i] for i in range(2, 11) if type(row[i]) == str]
+            for index, row in ds.iterrows():
+                url = row[0]
+                psa = row[1]
+                cat_list = [row[i] for i in range(2, 11) if type(row[i]) == str]
 
-            # DB object handling
-            banner = Banner()
-            banner.url = url
-            banner.prepaid_shows_amount = psa
-            banner.categories = ",".join(cat_list)
-            banner.save()
+                # DB object handling
+                banner = Banner()
+                banner.url = url
+                banner.prepaid_shows_amount = psa
+                banner.categories = ",".join(cat_list)
+                banner.save()
+        except:
+            raise IOError

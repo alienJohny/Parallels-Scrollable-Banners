@@ -39,14 +39,15 @@ import random
 BASE_URL = "http://0.0.0.0:9000/"
 
 f = open("cfg.csv", "w")
-header = "Image_URL;prepaid_shows_amount;" + ";".join(["category" + str(n) for n in range(1, 11)])
+header = "Image_URL;prepaid_shows_amount;" + \
+         ";".join(["category" + str(n) for n in range(1, 11)])
 f.write(header + "\n")
 
 cats = ["truck", "dog", "cat", "ship", "bird", "airplane", "auto", "horse", "deer", "frog"]
 
 for img in glob.glob("*.png"):
     imgurl = BASE_URL + img
-    psa = str(random.randint(10, 50))
+    psa = str(random.randint(10, 5 * 1000))
 
     ncats = random.randint(1, 10)
     current_cats = list(np.random.choice(cats, ncats, replace=False))
