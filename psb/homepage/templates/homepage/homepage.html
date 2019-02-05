@@ -17,7 +17,7 @@
 
   <div class="container" style="height: 400px;">
     <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
-      <form method="post" class="p-3 shadow-sm rounded" style="width: 500px; background-color: #FAFAFA;">
+      <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data" class="p-3 shadow-sm rounded" style="width: 500px; background-color: #FAFAFA;">
         {% csrf_token %}
         <!-- Tip -->
         <div class="form-group">
@@ -28,18 +28,18 @@
         <!-- File upload -->
         <div class="form-group">
           <div class="custom-file">
-            <input required type="file" class="custom-file-input" id="customFile">
+            <input required name="file" type="file" class="custom-file-input" id="customFile">
             <label class="custom-file-label" for="customFile">Choose file</label>
-            <script>
-              $(document).ready(function () {
-                bsCustomFileInput.init()
-              })
-            </script>
           </div>
         </div>
         <!-- Submit -->
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
+      <script>
+              $(document).ready(function () {
+                bsCustomFileInput.init()
+              })
+      </script>
     </div>
   </div>
 </body>
