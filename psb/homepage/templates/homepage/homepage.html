@@ -17,7 +17,8 @@
 
   <div class="container" style="height: 400px;">
     <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
-      <form  class="p-3 shadow-sm rounded" style="width: 500px; background-color: #FAFAFA;">
+      <form method="post" class="p-3 shadow-sm rounded" style="width: 500px; background-color: #FAFAFA;">
+        {% csrf_token %}
         <!-- Tip -->
         <div class="form-group">
           <h5 class="text-center">

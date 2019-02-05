@@ -14,3 +14,9 @@
 <br />
 В дальнейшем запускать веб сервер можно командой `$ ./run.sh` из директории проекта `../psb/`
 <br />
+
+## API
+HTTP GET пример: `http://127.0.0.1:8000/get?category=auto&category=trains` <br />
+```bash
+$ curl -X GET "http://127.0.0.1:8000/get?category=auto&category=trains"
+```
