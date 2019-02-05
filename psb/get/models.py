@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class Banner(models.Model):
+    url = models.URLField()
+    prepaid_shows_amount = models.IntegerField()
+    categories = models.TextField()
+    image = models.ImageField(upload_to='banners/')
