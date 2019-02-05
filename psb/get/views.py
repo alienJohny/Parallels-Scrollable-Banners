@@ -4,13 +4,24 @@ from DataManager.DataManager import DataManager
 from get.models import Banner
 
 def get(request):
-
-    for obj in Banner.objects.order_by("prepaid_shows_amount"):
-        print(obj.categories, obj.prepaid_shows_amount)
-
     if request.method == "GET":
         if "category" in request.GET:
-            print(request.GET)
+            categories = request.GET["category"]
+
+            dm = DataManager()
+            good_pks = []
+
+            for obj in Banner.objects.order_by("-prepaid_shows_amount"):
+                # If at least one category matches
+                if dm.matching_values(obj.categories.split(","), categories) > 0:
+                    # Save his database primary key
+                    good_pks.append(obj.pk)
+
+            sorted_psa = [Banner.objects.get(pk=good_pk).prepaid_shows_amount
+                          for good_pk in good_pks]
+
+            # Banner to be shown
+            banner_pk = dm.random_pick_from_given_distribution(good_pks, sorted_psa)
 
     return HttpResponse("get page")
 

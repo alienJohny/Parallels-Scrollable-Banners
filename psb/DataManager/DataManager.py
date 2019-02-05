@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import numpy
 from get.models import Banner
 
 class DataManager():
@@ -12,6 +13,9 @@ class DataManager():
 
     def get_probabilities(self, x):
         return [self.get_probability(x_i, x) for x_i in x]
+
+    def random_pick_from_given_distribution(self, objects, distr):
+        return numpy.random.choice(objects, p=self.get_probabilities(distr))
 
     def matching_values(self, a, b):
         return sum([1 if i in b else 0 for i in a])

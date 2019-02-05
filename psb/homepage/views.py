@@ -5,6 +5,7 @@ from DataManager.DataManager import DataManager
 from psb.settings import BASE_DIR
 from get.models import Banner
 
+
 def homepage(request):
     return render(request, "homepage/homepage.html", {})
 
