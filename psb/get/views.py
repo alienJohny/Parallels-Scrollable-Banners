@@ -23,6 +23,11 @@ def get(request):
             # Banner to be shown
             banner_pk = dm.random_pick_from_given_distribution(good_pks, sorted_psa)
 
+            # Decrement amount of shows
+            b = Banner.objects.get(pk=banner_pk)
+            b.prepaid_shows_amount -= 1
+            b.save()
+
     return HttpResponse("get page")
 
 
