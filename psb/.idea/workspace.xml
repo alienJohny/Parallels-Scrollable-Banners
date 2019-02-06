@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce11f4ef-49cc-41f8-8e94-2fd1350d1102" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataManager/DataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManager/DataManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get/templates/get/get.html" beforeDir="false" afterPath="$PROJECT_DIR$/get/templates/get/get.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/get/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,17 +13,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+            <state relative-caret-position="187">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#220#1519#0" />
                 <element signature="e#592#804#0" />
                 <element signature="e#831#934#0" />
                 <element signature="e#1422#1497#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/get/templates/get/get.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -88,7 +97,6 @@
         <option value="$PROJECT_DIR$/sandbox/test_manager.py" />
         <option value="$PROJECT_DIR$/migrate.sh" />
         <option value="$PROJECT_DIR$/homepage/tests.py" />
-        <option value="$PROJECT_DIR$/get/templates/get/get.html" />
         <option value="$PROJECT_DIR$/homepage/views.py" />
         <option value="$PROJECT_DIR$/init.sh" />
         <option value="$PROJECT_DIR$/psb/settings.py" />
@@ -98,6 +106,7 @@
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/DataManager/DataManager.py" />
         <option value="$PROJECT_DIR$/get/views.py" />
+        <option value="$PROJECT_DIR$/get/templates/get/get.html" />
       </list>
     </option>
   </component>
@@ -134,7 +143,20 @@
             <path>
               <item name="psb" type="b2602c69:ProjectViewProjectNode" />
               <item name="psb" type="462c0819:PsiDirectoryNode" />
-              <item name="DataManager" type="462c0819:PsiDirectoryNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psb" type="462c0819:PsiDirectoryNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psb" type="462c0819:PsiDirectoryNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="get" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +244,7 @@
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14030443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14030443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +255,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288948" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32756326" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4996691" visible="true" weight="0.2663116" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996691" visible="true" weight="0.2663116" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003309" side_tool="true" weight="0.2663116" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32756326" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -381,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get/templates/get/get.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uploads/cfg.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -464,14 +479,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+        <state relative-caret-position="187">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#220#1519#0" />
             <element signature="e#592#804#0" />
             <element signature="e#831#934#0" />
             <element signature="e#1422#1497#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get/templates/get/get.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>

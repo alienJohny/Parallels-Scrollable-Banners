@@ -40,5 +40,6 @@ def get(request):
         banner_to_show.prepaid_shows_amount -= 1
         banner_to_show.save()
 
-    return render(request, 'get/get.html', {"banner_url": banner_to_show.url})
+    return render(request, 'get/get.html', {"banner_url": banner_to_show.url,
+                                            "categories": banner_to_show.categories})
 
