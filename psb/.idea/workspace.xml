@@ -4,6 +4,7 @@
     <list default="true" id="ce11f4ef-49cc-41f8-8e94-2fd1350d1102" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataManager/DataManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataManager/DataManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/get/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,27 +14,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/get/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="286">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#592#804#0" />
                 <element signature="e#831#934#0" />
+                <element signature="e#1422#1497#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="467">
-                <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataManager/DataManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#267#651#0" />
+                <element signature="e#698#917#0" />
+                <element signature="e#962#1616#0" />
+                <element signature="e#1675#2349#0" />
+                <element signature="e#2411#2581#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,9 +95,9 @@
         <option value="$PROJECT_DIR$/homepage/templates/homepage/homepage.html" />
         <option value="$PROJECT_DIR$/get/models.py" />
         <option value="$PROJECT_DIR$/DataManager/previousBannerId.json" />
-        <option value="$PROJECT_DIR$/get/views.py" />
-        <option value="$PROJECT_DIR$/DataManager/DataManager.py" />
         <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/DataManager/DataManager.py" />
+        <option value="$PROJECT_DIR$/get/views.py" />
       </list>
     </option>
   </component>
@@ -122,6 +130,11 @@
             <path>
               <item name="psb" type="b2602c69:ProjectViewProjectNode" />
               <item name="psb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psb" type="462c0819:PsiDirectoryNode" />
+              <item name="DataManager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -424,44 +437,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="385">
+            <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataManager/DataManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+        <state relative-caret-position="210">
+          <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#130#157#0" />
-            <element signature="e#266#378#0" />
-            <element signature="e#696#739#0" />
-            <element signature="e#950#1480#0" />
-            <element signature="e#1680#2027#0" />
-            <element signature="e#1087#1119#0" />
-            <element signature="e#1166#1217#0" />
-            <element signature="e#1254#1464#0" />
-            <element signature="e#1282#1391#0" />
-            <element signature="e#1686#1766#0" />
+            <element signature="e#267#651#0" />
+            <element signature="e#698#917#0" />
+            <element signature="e#962#1616#0" />
+            <element signature="e#1675#2349#0" />
+            <element signature="e#2411#2581#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/get/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="286">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#592#804#0" />
             <element signature="e#831#934#0" />
+            <element signature="e#1422#1497#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="467">
-            <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

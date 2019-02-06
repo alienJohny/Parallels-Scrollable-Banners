@@ -79,6 +79,19 @@ class DataManager():
 
         return banner_pk
 
+    def select_random_banner(self, model):
+        """
+        Selects random banner
+
+        :param model: Banner class
+        :return: Banner instance
+        """
+
+        banners = model.objects.filter(prepaid_shows_amount__gt=0)
+        banner_to_show = self.random_pick_from_given_distribution(banners, None)
+
+        return banner_to_show
+
     def _get_probability(self, x_i, x):
         return x_i / sum([i for i in x])
 

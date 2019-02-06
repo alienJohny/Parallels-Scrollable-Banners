@@ -63,4 +63,4 @@ f.close()
 В качестве способа я выбрал с вероятностью 33% заменять баннер на один из списка подходящих по категории. <br />
 Вероятность выбрал эвристически. Таким образом есть вероятность 66%, что баннер все же будет показан 2 раза подряд. <br />
 И 10% вероятность, что баннер будет заменем на другой 2 раза подряд. <br />
-Функционал реализован в классе `DataManager` по [ссылке](https://github.com/alienJohny/Parallels-Scrollable-Banners/blob/4db2f824ab2dce4a896bb8ab89b87b2188882470/psb/DataManager/DataManager.py#L57):
+Функционал реализован в классе `DataManager` по [ссылке](https://github.com/alienJohny/Parallels-Scrollable-Banners/blob/4db2f824ab2dce4a896bb8ab89b87b2188882470/psb/DataManager/DataManager.py#L57).
