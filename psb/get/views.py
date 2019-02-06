@@ -1,9 +1,16 @@
+import glob
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from DataManager.DataManager import DataManager
 from get.models import Banner
+from psb.settings import BASE_DIR
 
 def get(request):
+
+    # Check on uploading configuration file
+    if glob.glob(BASE_DIR + "/uploads/*.csv") == []:
+        raise Http404("Please, upload config file.")
+
     if request.method == "GET":
         # To manage the issuance of banners
         dm = DataManager()
